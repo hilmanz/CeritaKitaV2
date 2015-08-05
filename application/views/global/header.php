@@ -31,7 +31,14 @@
             <div class="container">
                 <div class="row">
                     <div class="topbanner banner-ads">
-                       <img src="assets/content/banner.jpg"/>
+					<?php foreach($banner as $d)
+					{
+					?>
+                       <img src='images/<?php echo $d['images'];?>'>
+					   <?php
+					}
+					?>
+					
                         <a href="<?= base_url()?>" class="homebtn"></a>
                         <a href="<?= base_url()?>register" class="registerbtn"></a>
                     </div>
